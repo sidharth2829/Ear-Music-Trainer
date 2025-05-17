@@ -1,0 +1,86 @@
+*{
+    /* border: 2px solid black; */
+}
+body{
+    background-image: url("/assets/new_bg.jpg");
+    width: 100%;
+    background-position: center;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+}
+#main{
+    display: flex;
+    height: 80%;
+    justify-content: baseline;
+}
+#intro,#box{
+    width: 40vw,;
+height: 80vh;
+    margin: 5%;
+    flex-direction: row;
+}
+#intro{
+    width: 40vw;
+}
+#box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+    flex-direction: column;
+    
+}
+#row,#column{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    /* margin: 5%; */
+    justify-self: center;
+}
+#row{
+    transform: rotate(90deg);
+}
+
+#C1,#C2,#C3,#C4{
+    width: 20%;
+}
+
+#row{
+    position: relative;
+    top: 23%;
+
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#row,#column {
+    display: flex;
+    align-items: center;
+    /* width: 80vw; */
+
+    animation: rotate 5s linear infinite; 
+}
+#row {
+    /* display: flex;
+    align-items: center;
+    width: 80vw; */
+    width: 42vw;
+    animation: rotate 5s linear infinite; 
+    animation-delay: 0.5s;
+}
+
+#C1, #C2, #C3, #C4 {
+    width: 20%;
+    transform-origin: center; /* Set the rotation origin to the center */
+}
